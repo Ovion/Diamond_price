@@ -1,7 +1,6 @@
 
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
-from src.constants.constants import PATH_DATA, PATH_TEST, PATH_DATA_CLEAN, PATH_TEST_CLEAN
 
 
 def magic_size(value):
@@ -22,20 +21,29 @@ def apply_magic_clean(df):
 
 
 def standarization(data, test):
+    lst_col = list(data.columns)
+    lst_col.remove('price')
+
     ss = StandardScaler()
-    data = ss.fit_transform(data)
-    test = ss.transform(test)
+    ss.fit(data[lst_col])
+
+    data[lst_col] = ss.transform(data[lst_col])
+    test[lst_col] = ss.transform(test[lst_col])
     return data, test
 
 
 if __name__ == '__main__':
-    data = pd.read_csv(PATH_DATA)
-    test = pd.read_csv(PATH_TEST)
+    data = pd.read_csv("input/data.csv")
+    test = pd.read_csv("input/test.csv")
 
+    print('Cleaning data...')
     data_clean = apply_magic_clean(data)
     test_clean = apply_magic_clean(test)
 
+    print('Transforming...')
     data_t, test_t = standarization(data_clean, test_clean)
 
-    data_t.to_csv(PATH_DATA_CLEAN, index=False)
-    test_t.to_csv(PATH_TEST_CLEAN, index=False)
+    print('Saving data...')
+    data_t.to_csv("input/clean_data.csv", index=False)
+    test_t.to_csv("input/clean_test.csv", index=False)
+    print('Done')
