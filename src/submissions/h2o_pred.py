@@ -16,15 +16,14 @@ X.remove(data['id'])
 
 X_test = test.drop(['id'], axis=1)
 
-aml = H2OAutoML(max_models=40, seed=1, sort_metric="RMSE")
+aml = H2OAutoML(max_models=20, seed=1, sort_metric="RMSE")
 aml.train(x=X, y=y, training_frame=data)
 
 y_pred = aml.leader.predict(X_test)
 
-submit = pd.DataFrame({
-    'id': test['id'],
-    'price': y_pred
-})
+submit = test['id']
+submit['price'] = y_pred
+submit = submit.as_data_frame(use_pandas=True)
 
 submit.price = submit.price.apply(lambda x: round(x, 0))
 submit.price = submit.price.apply(lambda x: int(x))

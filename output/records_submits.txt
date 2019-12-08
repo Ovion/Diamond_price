@@ -1,0 +1,40 @@
+
+silva:
+
+def num_clarity(value):
+    dict_clarity = {
+        'I1': 1,
+        'SI1': 2, 'SI2': 3,
+        'VS1': 4, 'VS2': 5,
+        'VVS1': 6, 'VVS2': 7,
+        'IF': 8
+    }
+    return dict_clarity[value]
+
+def num_cut(value):
+    dict_cut = {
+        'Fair': 1, 'Good': 2, 'Very Good': 3, 'Premium': 4, 'Ideal': 5
+    }
+    return dict_cut[value]
+
+def num_color(value):
+    dict_color = {
+        'J': 1, 'I': 2, 'H': 3,
+        'G': 4, 'F': 5, 'E': 6,
+        'D': 7
+    }
+    return dict_color[value]
+
+
+def magic_size(value):
+    lst_magic = [0.5, 0.75, 1.0, 1.5, 1.75, 2.0, 2.5, 2.75,
+                 3.0, 3.5, 3.75, 4.0, 4.5, 4.75, 5.0, 5.5, 5.75, 6.0]
+    if value in lst_magic:
+        return 1
+    else:
+        return 0
+
+
+StandardScaler()
+
+RandomForestRegressor(n_estimators=100, n_jobs=2)
