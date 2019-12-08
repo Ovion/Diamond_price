@@ -34,7 +34,14 @@ def magic_size(value):
     else:
         return 0
 
-
 StandardScaler()
 
 RandomForestRegressor(n_estimators=100, n_jobs=2)
+
+
+
+aqua:
+
+Los mismos parámetros de arriba
+H2OAutoML(max_models=20, seed=1, sort_metric="RMSE")
+
