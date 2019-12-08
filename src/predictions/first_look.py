@@ -13,7 +13,7 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.svm import SVR
 
 
-data = pd.read_csv('input/clean_data')
+data = pd.read_csv('input/clean_data.csv')
 
 X = data.drop(['price'], axis=1)
 y = data.price
@@ -34,6 +34,7 @@ for model_name, model in models.items():
     rmse = mean_squared_error(y_test, y_pred)
     params = model.get_params
 
+    print('Saving params in records.txt ...')
     with open('output/records.txt', "a+") as file:
         file.write(
             f'''Model: {model_name}\t RMSE: {rmse}\t Params: {params} \n\n'''
