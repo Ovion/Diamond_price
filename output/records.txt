@@ -1,6 +1,6 @@
-Model: LR	 RMSE: 1289748.4021829024	 Params: <bound method BaseEstimator.get_params of LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)> 
+Model: LR	 RMSE: 1401848.971487712	 Params: <bound method BaseEstimator.get_params of LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)> 
 
-Model: RFR	 RMSE: 361994.8382849049	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+Model: RFR	 RMSE: 387738.2980115299	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
                       max_features='auto', max_leaf_nodes=None,
                       min_impurity_decrease=0.0, min_impurity_split=None,
                       min_samples_leaf=1, min_samples_split=2,
@@ -8,29 +8,17 @@ Model: RFR	 RMSE: 361994.8382849049	 Params: <bound method BaseEstimator.get_par
                       n_jobs=None, oob_score=False, random_state=None,
                       verbose=0, warm_start=False)> 
 
-Model: RFC	 RMSE: 616485.2068965518	 Params: <bound method BaseEstimator.get_params of RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
-                       max_depth=None, max_features='auto', max_leaf_nodes=None,
-                       min_impurity_decrease=0.0, min_impurity_split=None,
-                       min_samples_leaf=1, min_samples_split=2,
-                       min_weight_fraction_leaf=0.0, n_estimators=10,
-                       n_jobs=None, oob_score=False, random_state=None,
-                       verbose=0, warm_start=False)> 
-
-Model: DTR	 RMSE: 464083.9392657804	 Params: <bound method BaseEstimator.get_params of DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+Model: DTR	 RMSE: 496128.46590767265	 Params: <bound method BaseEstimator.get_params of DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
                       max_leaf_nodes=None, min_impurity_decrease=0.0,
                       min_impurity_split=None, min_samples_leaf=1,
                       min_samples_split=2, min_weight_fraction_leaf=0.0,
                       presort=False, random_state=None, splitter='best')> 
 
-Model: KNR	 RMSE: 594671.8651687059	 Params: <bound method BaseEstimator.get_params of KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
+Model: KNR	 RMSE: 622378.3309158324	 Params: <bound method BaseEstimator.get_params of KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
                     metric_params=None, n_jobs=None, n_neighbors=5, p=2,
                     weights='uniform')> 
 
-Model: KNC	 RMSE: 1484259.9289333827	 Params: <bound method BaseEstimator.get_params of KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
-                     metric_params=None, n_jobs=None, n_neighbors=5, p=2,
-                     weights='uniform')> 
-
-Model: GBR	 RMSE: 525489.7930842753	 Params: <bound method BaseEstimator.get_params of GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+Model: GBR	 RMSE: 568170.4174511745	 Params: <bound method BaseEstimator.get_params of GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
                           learning_rate=0.1, loss='ls', max_depth=3,
                           max_features=None, max_leaf_nodes=None,
                           min_impurity_decrease=0.0, min_impurity_split=None,
@@ -39,4 +27,209 @@ Model: GBR	 RMSE: 525489.7930842753	 Params: <bound method BaseEstimator.get_par
                           n_iter_no_change=None, presort='auto',
                           random_state=None, subsample=1.0, tol=0.0001,
                           validation_fraction=0.1, verbose=0, warm_start=False)> 
+
+Model: ABR	 RMSE: 1849186.1432433906	 Params: <bound method BaseEstimator.get_params of AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+                  n_estimators=50, random_state=None)> 
+
+Model: GBR	 RMSE: 556099.7356822299	 Params: <bound method BaseEstimator.get_params of GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+                          learning_rate=0.1, loss='ls', max_depth=3,
+                          max_features=None, max_leaf_nodes=None,
+                          min_impurity_decrease=0.0, min_impurity_split=None,
+                          min_samples_leaf=1, min_samples_split=2,
+                          min_weight_fraction_leaf=0.0, n_estimators=100,
+                          n_iter_no_change=None, presort='auto',
+                          random_state=None, subsample=1.0, tol=0.0001,
+                          validation_fraction=0.1, verbose=0, warm_start=False)> 
+
+Model: ABR	 RMSE: 1965483.4300532385	 Params: <bound method BaseEstimator.get_params of AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+                  n_estimators=50, random_state=None)> 
+
+Model: BR	 RMSE: 1307876.8801542148	 Params: <bound method BaseEstimator.get_params of BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+              fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=300,
+              normalize=False, tol=0.001, verbose=False)> 
+
+Model: MLP	 RMSE: 438462.88088090013	 Params: <bound method BaseEstimator.get_params of MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+             beta_2=0.999, early_stopping=False, epsilon=1e-08,
+             hidden_layer_sizes=(100,), learning_rate='constant',
+             learning_rate_init=0.001, max_iter=200, momentum=0.9,
+             n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+             random_state=None, shuffle=True, solver='adam', tol=0.0001,
+             validation_fraction=0.1, verbose=False, warm_start=False)> 
+
+Model: svr	 RMSE: 15120704.466535848	 Params: <bound method BaseEstimator.get_params of SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1,
+    gamma='auto_deprecated', kernel='rbf', max_iter=-1, shrinking=True,
+    tol=0.001, verbose=False)> 
+
+SIN LA COLUMNA CUT
+
+Model: RFR	 RMSE: 386058.013898424	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: DTR	 RMSE: 458319.83321106836	 Params: <bound method BaseEstimator.get_params of DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=None, splitter='best')> 
+
+Model: MLP	 RMSE: 505219.79630588094	 Params: <bound method BaseEstimator.get_params of MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+             beta_2=0.999, early_stopping=False, epsilon=1e-08,
+             hidden_layer_sizes=(100,), learning_rate='constant',
+             learning_rate_init=0.001, max_iter=200, momentum=0.9,
+             n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+             random_state=None, shuffle=True, solver='adam', tol=0.0001,
+             validation_fraction=0.1, verbose=False, warm_start=False)> 
+
+CON LOS DATOS EN NUMÉRICO
+
+Model: RFR	 RMSE: 314624.11201115535	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: DTR	 RMSE: 413667.56667317427	 Params: <bound method BaseEstimator.get_params of DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=None, splitter='best')> 
+
+Model: MLP	 RMSE: 1140786.7284450745	 Params: <bound method BaseEstimator.get_params of MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+             beta_2=0.999, early_stopping=False, epsilon=1e-08,
+             hidden_layer_sizes=(100,), learning_rate='constant',
+             learning_rate_init=0.001, max_iter=200, momentum=0.9,
+             n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+             random_state=None, shuffle=True, solver='adam', tol=0.0001,
+             validation_fraction=0.1, verbose=False, warm_start=False)> 
+
+SIN ESTANDARIZACIÓN
+
+Model: RFR	 RMSE: 352561.87631751905	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: DTR	 RMSE: 470814.97402212676	 Params: <bound method BaseEstimator.get_params of DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=None, splitter='best')> 
+
+Model: MLP	 RMSE: 1583764.945473054	 Params: <bound method BaseEstimator.get_params of MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+             beta_2=0.999, early_stopping=False, epsilon=1e-08,
+             hidden_layer_sizes=(100,), learning_rate='constant',
+             learning_rate_init=0.001, max_iter=200, momentum=0.9,
+             n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+             random_state=None, shuffle=True, solver='adam', tol=0.0001,
+             validation_fraction=0.1, verbose=False, warm_start=False)> 
+
+NORMALIZADO
+
+Model: RFR	 RMSE: 1138303.1825288823	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: DTR	 RMSE: 1524476.4540083006	 Params: <bound method BaseEstimator.get_params of DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=None, splitter='best')> 
+
+Model: KNR	 RMSE: 908487.5362847608	 Params: <bound method BaseEstimator.get_params of KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
+                    metric_params=None, n_jobs=None, n_neighbors=5, p=2,
+                    weights='uniform')> 
+
+Model: GBR	 RMSE: 3816196.283610264	 Params: <bound method BaseEstimator.get_params of GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+                          learning_rate=0.1, loss='ls', max_depth=3,
+                          max_features=None, max_leaf_nodes=None,
+                          min_impurity_decrease=0.0, min_impurity_split=None,
+                          min_samples_leaf=1, min_samples_split=2,
+                          min_weight_fraction_leaf=0.0, n_estimators=100,
+                          n_iter_no_change=None, presort='auto',
+                          random_state=None, subsample=1.0, tol=0.0001,
+                          validation_fraction=0.1, verbose=0, warm_start=False)> 
+
+KERNEL CENTER
+
+Model: RFR	 RMSE: 6309414.21027313	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: DTR	 RMSE: 7469016.734741072	 Params: <bound method BaseEstimator.get_params of DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=None, splitter='best')> 
+
+Model: KNR	 RMSE: 6134287.372947719	 Params: <bound method BaseEstimator.get_params of KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
+                    metric_params=None, n_jobs=None, n_neighbors=5, p=2,
+                    weights='uniform')> 
+
+Model: GBR	 RMSE: 8401357.153212152	 Params: <bound method BaseEstimator.get_params of GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+                          learning_rate=0.1, loss='ls', max_depth=3,
+                          max_features=None, max_leaf_nodes=None,
+                          min_impurity_decrease=0.0, min_impurity_split=None,
+                          min_samples_leaf=1, min_samples_split=2,
+                          min_weight_fraction_leaf=0.0, n_estimators=100,
+                          n_iter_no_change=None, presort='auto',
+                          random_state=None, subsample=1.0, tol=0.0001,
+                          validation_fraction=0.1, verbose=0, warm_start=False)> 
+
+VOLVEMOS A ESTANDARIZAR
+y cambiamos valores sobre 10
+
+Model: RFR	 RMSE: 349774.8476391981	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: DTR	 RMSE: 467509.219385475	 Params: <bound method BaseEstimator.get_params of DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=None, splitter='best')> 
+
+Model: KNR	 RMSE: 441144.13935978245	 Params: <bound method BaseEstimator.get_params of KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
+                    metric_params=None, n_jobs=None, n_neighbors=5, p=2,
+                    weights='uniform')> 
+
+Model: GBR	 RMSE: 450009.9209710258	 Params: <bound method BaseEstimator.get_params of GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+                          learning_rate=0.1, loss='ls', max_depth=3,
+                          max_features=None, max_leaf_nodes=None,
+                          min_impurity_decrease=0.0, min_impurity_split=None,
+                          min_samples_leaf=1, min_samples_split=2,
+                          min_weight_fraction_leaf=0.0, n_estimators=100,
+                          n_iter_no_change=None, presort='auto',
+                          random_state=None, subsample=1.0, tol=0.0001,
+                          validation_fraction=0.1, verbose=0, warm_start=False)> 
+
+PROBANDO
+
+Model: RFR	 RMSE: 304931.843724599	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
 

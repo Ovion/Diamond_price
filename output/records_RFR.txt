@@ -110,3 +110,317 @@ Model: RFR_2000	 RMSE: 386898.61998687877	 Params: <bound method BaseEstimator.g
                       n_jobs=None, oob_score=False, random_state=None,
                       verbose=0, warm_start=False)> 
 
+
+CAMBIADO A CAT_NUM
+
+Model: RFR_1000	 RMSE: 340316.85106223973	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+ANTIGUO ORDEN
+
+
+Model: RFR_1000	 RMSE: 329571.5940398878	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+ORDEN INVERSO
+
+
+Model: RFR_1000	 RMSE: 356441.94478781184	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_1000	 RMSE: 362667.9733475957	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_1000	 RMSE: 357897.29800332803	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+DE NUEVO ANTIGUO
+
+Model: RFR_1000	 RMSE: 372692.8960903311	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_1000	 RMSE: 355374.4237913518	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_1000	 RMSE: 309257.92866316857	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+CON DEPTH Y TABLE
+
+Model: RFR_1000	 RMSE: 326988.55438450526	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=1000,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100	 RMSE: 304069.8617416091	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100	 RMSE: 335172.10888288106	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100	 RMSE: 300189.09656802367	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+QUITANDO Cut
+Model: RFR_100	 RMSE: 299916.18904353346	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100	 RMSE: 344358.11136716907	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100	 RMSE: 336431.7567644648	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+VOLVIENDO A CUT Y MAGIC
+
+Model: RFR_100	 RMSE: 301998.2535259811	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100	 RMSE: 294296.1826339262	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100	 RMSE: 292601.9955340776	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+CAMBIOS
+
+Model: RFR_100	 RMSE: 329910.0095896885	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100_1	 RMSE: 328637.32374740817	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100_j2	 RMSE: 326549.91622283397	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100	 RMSE: 311554.15708657907	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100_1	 RMSE: 309982.6012568496	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100_j2	 RMSE: 310596.9319682274	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100	 RMSE: 287469.48002752976	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100_1	 RMSE: 288768.526720781	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)> 
+
+Model: RFR_100_j2	 RMSE: 286488.7434905856	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100_j2v2	 RMSE: 313322.94256685866	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=2,
+                      warm_start=False)> 
+
+Model: RFR_100_j2_1	 RMSE: 313204.5127430776	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100_j2	 RMSE: 315544.9450853629	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100_j2v2	 RMSE: 326918.2739463456	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=2,
+                      warm_start=False)> 
+
+Model: RFR_100_j2_1	 RMSE: 327423.2443053378	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100_j2	 RMSE: 323110.9220305616	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100_j4	 RMSE: 315766.0838876886	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=4,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100_j2	 RMSE: 313075.81942944165	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100_j4	 RMSE: 292562.47138065065	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=4,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+
+Model: RFR_100_j2	 RMSE: 288359.7118041822	 Params: <bound method BaseEstimator.get_params of RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=2,
+                      oob_score=False, random_state=None, verbose=0,
+                      warm_start=False)> 
+

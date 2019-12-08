@@ -30,31 +30,34 @@ from sklearn.neural_network import MLPRegressor
 
 from sklearn.svm import SVR
 
+from sklearn.multioutput import MultiOutputRegressor
 
-data = pd.read_csv('input/clean_data.csv')
+
+data = pd.read_csv('input/clean_data_num.csv')
 
 X = data.drop(['price'], axis=1)
 y = data.price
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 models = {
-    'LR': LinearRegression(),
-    'RFR': RandomForestRegressor(),
-    'RFC': RandomForestClassifier(),
-    'DTR': DecisionTreeRegressor(),
-    'KNR': KNeighborsRegressor(),
-    'KNC': KNeighborsClassifier(),
-    'GBR': GradientBoostingRegressor(),
-    'GBC': GradientBoostingClassifier(),
-    'ABR': AdaBoostRegressor(),
-    'ABC': AdaBoostClassifier(),
-    'GPR': GaussianProcessRegressor(),
-    'GPC': GaussianProcessClassifier(),
-    'MNB': MultinomialNB(),
-    'GNB': GaussianNB(),
-    'BR': BayesianRidge(),
-    'MLP': MLPRegressor(),
-    'svr': SVR()
+    # 'LR': LinearRegression(),
+    'RFR': RandomForestRegressor(n_estimators=100),
+    # 'RFC': RandomForestClassifier(),
+    'MOR': MultiOutputRegressor(RandomForestRegressor(n_estimators=100)),
+    # 'DTR': DecisionTreeRegressor(),
+    # 'KNR': KNeighborsRegressor(),
+    # 'KNC': KNeighborsClassifier(),
+    # 'GBR': GradientBoostingRegressor(),
+    # 'GBC': GradientBoostingClassifier(),
+    # 'ABR': AdaBoostRegressor(),
+    # 'ABC': AdaBoostClassifier(),
+    # 'GPR': GaussianProcessRegressor(),
+    # 'GPC': GaussianProcessClassifier(),
+    # 'MNB': MultinomialNB(),
+    # 'GNB': GaussianNB(),
+    # 'BR': BayesianRidge(),
+    # 'MLP': MLPRegressor(),
+    # 'svr': SVR()
 }
 
 for model_name, model in models.items():
