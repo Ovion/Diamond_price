@@ -11,14 +11,20 @@ X_train = data.drop(['price'], axis=1)
 y_train = data.price
 X_test = test.drop(['id'], axis=1)
 
+print('Training...')
 rfr = RandomForestRegressor(n_estimators=100, n_jobs=2)
 rfr.fit(X_train, y_train)
+print('Doing a prediction...')
 y_pred = rfr.predict(X_test)
 
+print('Saving...')
 submit = pd.DataFrame({
     'id': test['id'],
     'price': y_pred
 })
 
 submit.price = submit.price.apply(lambda x: round(x, 0))
+submit.price = submit.price.apply(lambda x: int(x))
+
 submit.to_csv('output/submit_silva.csv', index=False)
+print('Done')
