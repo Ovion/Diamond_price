@@ -14,7 +14,7 @@ def magic_size(value):
 
 def apply_magic_clean(df):
     df.drop(['depth', 'table', 'x', 'y', 'z'], axis=1, inplace=True)
-    df['magic'] = df.carat.apply(lambda x: magic_size(x))
+    # df['magic'] = df.carat.apply(lambda x: magic_size(x))
     df_dummy = pd.get_dummies(
         data=df, columns=['cut', 'color', 'clarity'], sparse=True)
     return df_dummy
