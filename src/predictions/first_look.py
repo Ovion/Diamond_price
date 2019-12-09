@@ -5,21 +5,16 @@ from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
 
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.ensemble import RandomForestClassifier
 
 from sklearn.tree import DecisionTreeRegressor
 
 from sklearn.neighbors import KNeighborsRegressor
-from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.ensemble import GradientBoostingClassifier
 
 from sklearn.ensemble import AdaBoostRegressor
-from sklearn.ensemble import AdaBoostClassifier
 
 from sklearn.gaussian_process import GaussianProcessRegressor
-from sklearn.gaussian_process import GaussianProcessClassifier
 
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.naive_bayes import GaussianNB
@@ -42,17 +37,12 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 models = {
     # 'LR': LinearRegression(),
     'RFR': RandomForestRegressor(n_estimators=100),
-    # 'RFC': RandomForestClassifier(),
     'MOR': MultiOutputRegressor(RandomForestRegressor(n_estimators=100)),
     # 'DTR': DecisionTreeRegressor(),
     # 'KNR': KNeighborsRegressor(),
-    # 'KNC': KNeighborsClassifier(),
     # 'GBR': GradientBoostingRegressor(),
-    # 'GBC': GradientBoostingClassifier(),
     # 'ABR': AdaBoostRegressor(),
-    # 'ABC': AdaBoostClassifier(),
     # 'GPR': GaussianProcessRegressor(),
-    # 'GPC': GaussianProcessClassifier(),
     # 'MNB': MultinomialNB(),
     # 'GNB': GaussianNB(),
     # 'BR': BayesianRidge(),
