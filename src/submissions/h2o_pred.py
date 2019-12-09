@@ -4,24 +4,25 @@ from sklearn.metrics import mean_squared_error
 import h2o
 from h2o.automl import H2OAutoML
 
-h2o.init()
+h2o.init(nthreads=-1, max_mem_size=10)
 
 data = h2o.import_file('input/clean_data_num.csv')
-test = h2o.import_file('input/clean_test_num.csv')
+pred = h2o.import_file('input/clean_test_num.csv')
 
-X = data.columns
+splits = data.split_frame(ratios=[0.8], seed=1)
+train = splits[0]
+test = splits[1]
+
 y = 'price'
-X.remove(y)
-X.remove(data['id'])
 
-X_test = test.drop(['id'], axis=1)
+X_test = pred.drop(['id'], axis=1)
 
-aml = H2OAutoML(max_models=20, seed=1, sort_metric="RMSE")
-aml.train(x=X, y=y, training_frame=data)
+aml = H2OAutoML(max_models=20, seed=1, sort_metric="RMSE", nfolds=0)
+aml.train(y=y, training_frame=train, validation_frame=test)
 
 y_pred = aml.leader.predict(X_test)
 
-submit = test['id']
+submit = pred['id']
 submit['price'] = y_pred
 submit = submit.as_data_frame(use_pandas=True)
 
@@ -29,3 +30,5 @@ submit.price = submit.price.apply(lambda x: round(x, 0))
 submit.price = submit.price.apply(lambda x: int(x))
 
 submit.to_csv('output/submit_aqua.csv', index=False)
+
+h2o.cluster().shutdown()

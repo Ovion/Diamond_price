@@ -45,3 +45,7 @@ aqua:
 Los mismos parámetros de arriba
 H2OAutoML(max_models=20, seed=1, sort_metric="RMSE")
 
+
+silva without magic:
+
+igual que silva pero sin la columna magic
