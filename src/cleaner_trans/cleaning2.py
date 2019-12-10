@@ -5,38 +5,38 @@ from sklearn.preprocessing import StandardScaler
 
 def num_clarity(value):
     dict_clarity = {
-        'I1': 1,
-        'SI1': 2,
-        'SI2': 3,
-        'VS1': 4,
-        'VS2': 5,
-        'VVS1': 6,
-        'VVS2': 7,
-        'IF': 8
+        'I1': 0,
+        'SI1': 1,
+        'SI2': 2,
+        'VS1': 3,
+        'VS2': 4,
+        'VVS1': 5,
+        'VVS2': 6,
+        'IF': 7
     }
     return dict_clarity[value]
 
 
 def num_cut(value):
     dict_cut = {
-        'Fair': 1,
-        'Good': 2,
-        'Very Good': 3,
-        'Premium': 4,
-        'Ideal': 5
+        'Fair': 0,
+        'Good': 1,
+        'Very Good': 2,
+        'Premium': 3,
+        'Ideal': 4
     }
     return dict_cut[value]
 
 
 def num_color(value):
     dict_color = {
-        'J': 1,
-        'I': 2,
-        'H': 3,
-        'G': 4,
-        'F': 5,
-        'E': 6,
-        'D': 7
+        'J': 0,
+        'I': 1,
+        'H': 2,
+        'G': 3,
+        'F': 4,
+        'E': 5,
+        'D': 6
     }
     return dict_color[value]
 
