@@ -53,6 +53,7 @@ def magic_size(value):
 def apply_magic_clean(df):
     df.drop(['x', 'y', 'z'], axis=1, inplace=True)
     # df['magic'] = df.carat.apply(lambda x: magic_size(x))
+    df.carat = df.carat.apply(lambda x: x**3)
     df.clarity = df.clarity.apply(lambda x: num_clarity(x))
     df.color = df.color.apply(lambda x: num_color(x))
     df.cut = df.cut.apply(lambda x: num_cut(x))
